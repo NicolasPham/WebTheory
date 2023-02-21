@@ -22,6 +22,10 @@
         "outDir": "./dist" (store javascript files)
         "removeComment": true, (remove all the comments in js)
         "noEmmitOnError":true (compiler wont generate js if there is an error)
+        "sourceMap": true
 
+- Debugging:
+    > in file launch.json add:
+        > "preLaunchTask": "tsc build - tsconfig.json"
 
 ```
