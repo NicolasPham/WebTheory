@@ -34,10 +34,17 @@
 </details>
 
 ###  Python
+<dtails>
 
 ```python
+- List Methods:
+    > list1 = [1,2,3,4,5]
+    > list2 = ["banana", "mango", "apple", "grape"]
 
+    > list1.extend(list2) -> [1,2,3,4,5,"banana", "mango", "apple", "grape"]
+    
 
 
 
 ```
+</details>
