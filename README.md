@@ -42,7 +42,20 @@
     > list2 = ["banana", "mango", "apple", "grape"]
 
     > list1.extend(list2) -> [1,2,3,4,5,"banana", "mango", "apple", "grape"]
+
+    > list2.append("cherry") -> ["banana", "mango", "apple", "grape", "cherry"]
+    > list2.insert(1, "cherry") -> ["banana", "cherry", "mango", "apple", "grape"]
+    > list2.remove("banana") -> ["mango", "apple", "grape"]
+    > list2.clear() -> empty the list
     
+    > print(list2.index("mango")) -> 1
+    > print(list2.count("mango")) -> 1 ~ return how many times value appear in the list
+
+    > list1.sort() -> sort the list in ascending order
+    > list2.reverse() -> sort the list in the reversing order
+    
+
+
 
 
 
