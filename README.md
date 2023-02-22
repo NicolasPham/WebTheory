@@ -46,6 +46,10 @@
     > list2.append("cherry") -> ["banana", "mango", "apple", "grape", "cherry"]
     > list2.insert(1, "cherry") -> ["banana", "cherry", "mango", "apple", "grape"]
     > list2.remove("banana") -> ["mango", "apple", "grape"]
+    > list2.pop() -> ["banana", "mango", "apple"]
+    > list2.pop(1) -> ["banana", "apple", "grape"]
+    > del list2[1] -> ["banana", "apple", "grape"]
+    > del list2 -> delete the list variable
     > list2.clear() -> empty the list
     
     > print(list2.index("mango")) -> 1
@@ -54,8 +58,11 @@
     > list1.sort() -> sort the list in ascending order
     > list2.reverse() -> sort the list in the reversing order
     
-
-
+- Tuple Methods: tuple is an immutable list
+- Function:
+    > def greetings_function(name):
+        print("Welcome" + name)
+    > greetings_function("Nick")
 
 
 
