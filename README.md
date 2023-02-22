@@ -2,6 +2,7 @@
 
 ### Typescript
 
+<details>
 ```javascript
 - What is typescript:
     > A programming language to address shortcomings of Javascript
@@ -27,5 +28,15 @@
 - Debugging:
     > in file launch.json add:
         > "preLaunchTask": "tsc build - tsconfig.json"
+
+```
+</details>
+
+###  Python
+
+```python
+
+
+
 
 ```
