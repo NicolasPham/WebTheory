@@ -3,6 +3,7 @@
 ### Typescript
 
 <details>
+
 ```javascript
 - What is typescript:
     > A programming language to address shortcomings of Javascript
