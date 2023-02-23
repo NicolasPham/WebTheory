@@ -60,9 +60,17 @@
     
 - Tuple Methods: tuple is an immutable list
 - Function:
+    > def greetings_function(*names):
+        print("Welcome" + names[1])
+    > greetings_function("Nick", "Ana", "Ryan")
+
+    > name = input("Please enter your name:")
     > def greetings_function(name):
-        print("Welcome" + name)
-    > greetings_function("Nick")
+        print("Welcome" + names[1])
+    > greetings_function(name)
+
+- IF statment:
+    
 
 
 
