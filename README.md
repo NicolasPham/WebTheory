@@ -70,9 +70,30 @@
     > greetings_function(name)
 
 - IF statment:
+    if condition:
+    elif condition2:
+    else:
+
+- While loops:
+    > i = 1
+    > while i < 6 or i == 6:
+        print (i)
+        i += 1
+
+- for loop:
+    > for letter in "Hello":
+        print(letter)
+        if letter == l:
+            break
+
+    > for x in range(4):
+        print(x)
+
+    > for x in range(3,7):
+        print(x)
+    > else:
+        print("Finish looping")
     
-
-
 
 ```
 </details>
