@@ -98,9 +98,9 @@
     > try :
         x = int(input("Input an integer: "))
         print(x)
-    > except ValueError: //wrong input
+    > except ValueError: # wrong input
         print("Value not an integer" + name)
-    > except NameError: //undefined variable
+    > except NameError: # undefined variable
         print("Something went wrong ... please try again")
 
     > try :
@@ -108,22 +108,22 @@
         print(x)
     > except:
         print("Something went wrong")
-    > else: //only run if everything went through
+    > else: #only run if everything went through
         print("Nothing went wrong")
-    > finally: //always run
+    > finally: # always run
         print("Try except finished")
 
 - Reading/Writing Files:
     > file = open(<filename>, "r")
-    // r: reading, w: writing, editing, a: append, r+: reading + writing
+    # r: reading, w: writing, editing, a: append, r+: reading + writing
     
-    > print(file.readable()) // true / false
+    > print(file.readable()) # true / false
     > for line in countries_file.readlines():
         print(line)
 
     > file.close()
 
-    // Writing files
+    # Writing files
     > countries_file = open("newFile.txt", "w")
     > countries_file.write("This is a new line")
     
