@@ -34,6 +34,8 @@
 </details>
 
 ###  Python
+
+#### Basic syntax
 <details>
 
 ```python
@@ -136,5 +138,25 @@
             self.age = age
     > p1 = Person("Nick", 33)
     > print(p1.name) #Nick
+
+- Modules:
+    > import app
+    > app.say_hi() #Hi, welcome to the world
+
+- Introduction to PIP: is used for installing external modules from the web
+    - what is pip: pip is package management system used to install and manage software packages
+    - pypi: the python package index
+
+```
+</details>
+
+#### Django
+<details>
+
+```python
+
+
+
+
 ```
 </details>
