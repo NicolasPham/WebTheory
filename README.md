@@ -130,10 +130,8 @@
 
 - Classes and Objects:
     - Class: a construct of different objects (we have various objects in the class)
-    > class MyClass:
-        x = 5
-    > p1 = MyClass();
-    > print(p1.x) #5
+    > class Person:
+        def __init__(self)
 
 
 ```
