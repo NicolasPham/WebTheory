@@ -34,7 +34,7 @@
 </details>
 
 ###  Python
-<dtails>
+<details>
 
 ```python
 - List Methods:
