@@ -136,9 +136,5 @@
             self.age = age
     > p1 = Person("Nick", 33)
     > print(p1.name) #Nick
-
-
-
-
 ```
 </details>
