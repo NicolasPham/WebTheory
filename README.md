@@ -154,6 +154,9 @@
 <details>
 
 ```python
+> pip install django
+> pip install virtualenvwrapper-win 
+    #install virtual environment on win
 
 
 
