@@ -157,6 +157,9 @@
 > pip install django
 > pip install virtualenvwrapper-win 
     #install virtual environment on win
+> mkvirtualenv myapp
+    # create a virtual environment called myapp
+
 
 
 
