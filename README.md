@@ -1,10 +1,25 @@
 # WebTheory
 
-### NextJS
+### NextJS / Sanity
 
 <details>
 
 ```javascript
+- Create new app with NEXT:
+    > npx create-next-app --example with-tailwindcss sanity-yt-built
+
+
+
+- Install SANITY:
+    > npm install -g @sanity/cli
+    > sanity init
+    > npm -y create sanity@latest (create new project)
+    
+
+
+
+
+
 
 
 ```
