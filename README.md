@@ -1,11 +1,33 @@
 # WebTheory
 
-### NextJS
+### Havard University Course
 
 <details>
 
 ```javascript
-
+- Response
+    - Viewport: the visual part of the screen that the users can actually see
+        > <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    - Media Queries:
+        > @media (max-width: 1024px) {}
+    - Grid display:
+        > grid-column-gap: 20px;
+        > grid-template-columns: 200px 200px auto;
+    - Variables in SASS:
+        > create a file called "variables.scss"
+            > $color: red;
+        > compile sass file to css:
+            > sass variables.scss:variables.css (manually compile)
+            > sass --watch variables.scss:variables.css (automatically compile)
+        > Inheritance:
+            > %message { //make this as inheritance
+                font-family, background-color, color, etc
+            }
+            > .success {
+                @extend %message;
+                padding:...
+            }
+        
 
 ```
 </details>
