@@ -5,7 +5,7 @@
 <details>
 
 ```javascript
-- Response
+- BASIC HTML/CSS
     - Viewport: the visual part of the screen that the users can actually see
         > <meta name="viewport" content="width=device-widht, initial-scale=1.0">
     - Media Queries:
@@ -27,6 +27,24 @@
                 @extend %message;
                 padding:...
             }
+            
+- Git: 
+    > git clone <url>: take the repository from the internet and download to your own computer
+        - HTTPs: is the url we need
+    > git add <filename>: add file to keep track of
+        - We can only keep track of specific files we want
+        > git commit -am: 
+    > git commit -m "message": save the state of the folder
+    > git status: what currently happening inside the repository
+    
+    
+
+
+
+
+
+
+
         
 
 ```
