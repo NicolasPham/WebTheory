@@ -39,7 +39,19 @@
     > git push: push commited files to server
     > git pull: pull any changed files from server to local computer
     > git log: keep tracks of all commits that have been made
-    > 
+    > git reset: go back to older version commit
+        > git reset --hard <commit> : go back to version with commit hash
+        > git reset --hard origin/master: get back to current version on github
+    > git branch: tell me what branch I'm currently on, and all branches that I have
+        > git checkout -b <branch name> : create a new branch with <branch name>
+        > git checkout master: switch to master branch
+    > git merge <branch name> : merge one branch to the current branch
+    > fork: make your own copy of a repository, then we can clone, pull and work on it
+    
+    - Github page: a github website provide to user
+        - Create a repository as username.github.io
+        - URL in Setting
+        
     
     
 
