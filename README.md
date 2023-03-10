@@ -33,9 +33,13 @@
         - HTTPs: is the url we need
     > git add <filename>: add file to keep track of
         - We can only keep track of specific files we want
-        > git commit -am: 
+        > git commit -am "message": commit all files that have changed
     > git commit -m "message": save the state of the folder
     > git status: what currently happening inside the repository
+    > git push: push commited files to server
+    > git pull: pull any changed files from server to local computer
+    > git log: keep tracks of all commits that have been made
+    > 
     
     
 
