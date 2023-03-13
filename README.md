@@ -80,6 +80,16 @@
     > list1.sort() -> sort the list in ascending order
     > list2.reverse() -> sort the list in the reversing order
     
+- Set: a collection where value only appears once. If add another one already exist, will show only one
+    > s = set()
+    > s.add(1)
+    > s.add(2)
+    > s.remove(2)
+    
+- Dict:
+    > names = {"first": "Nicolas", "last": "Pham"}
+    > print(names["first"]
+    
 - Tuple Methods: tuple is an immutable list
 - Function:
     > def greetings_function(*names):
@@ -162,6 +172,12 @@
 - Modules:
     > import app
     > app.say_hi() #Hi, welcome to the world
+    
+    > from <filename> import <variable name>
+        > from function import square
+    - or
+    > import function
+        > print(function.square)
 
 - Introduction to PIP: is used for installing external modules from the web
     - what is pip: pip is package management system used to install and manage software packages
