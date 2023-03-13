@@ -56,8 +56,6 @@
 </details>
 
 ###  Python
-
-#### Basic syntax
 <details>
 
 ```python
@@ -169,9 +167,17 @@
     - what is pip: pip is package management system used to install and manage software packages
     - pypi: the python package index
     
-- format String:
-    print (f"Hello, {name}")
+- Additional info:
+    format String: 
+        > print (f"Hello, {name}")
+    convert variable into another type:
+        > n = int(input("Enter number: "))
+    
+    
+    
 
+    
+    
 ```
 </details>
 
