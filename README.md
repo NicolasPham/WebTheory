@@ -126,7 +126,7 @@
     > else:
         print("Finish looping")
 
-- try / except:
+- Exceptions:
     > try :
         x = int(input("Input an integer: "))
         print(x)
@@ -162,12 +162,25 @@
 
 - Classes and Objects:
     - Class: a construct of different objects (we have various objects in the class)
-    > class Person:
-        def __init__(self, name, age):
-            self.name = name
-            self.age = age
-    > p1 = Person("Nick", 33)
-    > print(p1.name) #Nick
+    > class Flight():
+        def __init__(self, capacity):
+            self.capacity = capacity
+            self.passengers = []
+        def add_passenger(self, name):
+            if not self.open_seats():
+                return False
+            self.passengers.append(name)
+            return True
+        def open_seats(self):
+            return self.capacity - len(self.passengers)
+    > flight = Flight(3)
+    > people = ["Nick", "Ana", "Ryan", "Nobody"]
+    > for person in people:
+        success = flight.app_passenger(person)
+        if success:
+            print(f"Added {person} to flight successfully")
+        else:
+            print(f"No available seat for {person}")
 
 - Modules:
     > import app
@@ -188,6 +201,38 @@
         > print (f"Hello, {name}")
     convert variable into another type:
         > n = int(input("Enter number: "))
+    exit the program:
+        import sys
+        sys.exit(1)
+        
+- Decorator:
+    def annouce(f):
+        def wrapper():
+            print("About to run the function...")
+            f()
+            print("Done with the function")
+        return wrapper
+
+    @annouce
+    def hello():
+        print("Hello world")
+    
+    hello()
+    
+- Lambda:
+    people = [
+        {"name": "Nick", "house": "Pham"},
+        {"name": "Ana", "house": "Nguyen"},
+        {"name": "Ryan", "house": "PN"},
+    ]
+    
+    def f(person):
+        return person["name"]
+    people.sort(key=f)
+    print(people)
+    
+    --- equals to ---
+    people.sort(key=lambda person: person["name"])
     
     
     
