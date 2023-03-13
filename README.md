@@ -52,17 +52,6 @@
         - Create a repository as username.github.io
         - URL in Setting
         
-    
-    
-
-
-
-
-
-
-
-        
-
 ```
 </details>
 
@@ -179,6 +168,9 @@
 - Introduction to PIP: is used for installing external modules from the web
     - what is pip: pip is package management system used to install and manage software packages
     - pypi: the python package index
+    
+- format String:
+    print (f"Hello, {name}")
 
 ```
 </details>
