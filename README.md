@@ -251,7 +251,7 @@
 > mkvirtualenv myapp
     # create a virtual environment called myapp
 
-- From Havard University:
+- Havard University:
 > pip3 install django
 > django-admin startproject <PROJECT NAME>
 > python manage.py runserver #run the server
@@ -269,14 +269,22 @@
     > from django.http import HttpResponse
     > def index(request):
         return HttpResponse("Hello World")
-    > def nick(request):
-        return HttpResponse("Hello, Nick!")
+    > def greet(request, name):
+        return HttpResponse(f"Hello, {name.capitalize()}!")
+    #Real router:
+    > def index(req):
+        return render(req, "hello/index.html")
+    > def greet(req, name):
+        return render(req, "hello/greet.html", {
+            "name": name.capitalize()
+        })
+    
 - create urls.py in hello directory:
     > from django.urls import path
     > from . import views
     > urlpatterns = [
           path("", views.index, name="index"),
-          path("nick", views.nick, name="nick")
+          path("<str:name>", views.greet, name="greet")
       ]
 - in urls.py of main directory:
     > from django.urls import include, path
@@ -284,6 +292,11 @@
         path("admin/", ...),
         path("hello/", include("hello.urls"))
       ]
+    
+#Real router: create a templates folder inside hello, then create hello folder inside templates
+    - create index.html inside ./hello/templates/hello
+        <h1>Hello, {{name}}</h1>
+    
 
 
 
