@@ -267,6 +267,7 @@
     ]
 - views.py of the application:
     > from django.http import HttpResponse
+    > import datetime
     > def index(request):
         return HttpResponse("Hello World")
     > def greet(request, name):
@@ -277,6 +278,11 @@
     > def greet(req, name):
         return render(req, "hello/greet.html", {
             "name": name.capitalize()
+        })
+    > def newyear(req):
+        now = datetime.datetime.now()
+        return render(req, "hello/newyear.html", {
+            "newyear": now.month == 1 and now.day == 1
         })
     
 - create urls.py in hello directory:
@@ -296,8 +302,18 @@
 #Real router: create a templates folder inside hello, then create hello folder inside templates
     - create index.html inside ./hello/templates/hello
         <h1>Hello, {{name}}</h1>
-    
-
+        
+        {% if newyear %}
+            <h1>YES</h1>
+        {% else %}
+            <h1>NO</h1>
+        {% endif %} #since we dont have intentation, we must have endif
+        
+    - create a "static" folder in hello dir, and create files "./hello/static/newyear/styles.css"
+    - in file newyear.html include: \
+        > {%  load static %}
+        > <link href="{%  static newyear/styles.css %}" rel="stylesheet">
+        
 
 
 
