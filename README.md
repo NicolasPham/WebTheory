@@ -246,11 +246,44 @@
 <details>
 
 ```python
-> pip install django
 > pip install virtualenvwrapper-win 
     #install virtual environment on win
 > mkvirtualenv myapp
     # create a virtual environment called myapp
+
+- From Havard University:
+> pip3 install django
+> django-admin startproject <PROJECT NAME>
+> python manage.py runserver #run the server
+> python manage.py startapp <APP NAME> #create an app called <APP NAME>
+    > python manage.py startapp hello
+
+- setting.py configuration:
+    #show what apps are installed in the projects
+    > INSTALLED_APP = [
+        'hello',
+        'django.contrib.admin',
+        'django.contrib.auth',
+    ]
+- views.py of the application:
+    > from django.http import HttpResponse
+    > def index(request):
+        return HttpResponse("Hello World")
+    > def nick(request):
+        return HttpResponse("Hello, Nick!")
+- create urls.py in hello directory:
+    > from django.urls import path
+    > from . import views
+    > urlpatterns = [
+          path("", views.index, name="index"),
+          path("nick", views.nick, name="nick")
+      ]
+- in urls.py of main directory:
+    > from django.urls import include, path
+    > urlpatterns = [
+        path("admin/", ...),
+        path("hello/", include("hello.urls"))
+      ]
 
 
 
